@@ -56,5 +56,67 @@
         android:src="@drawable/paper_icon"
         android:background="@color/orange_for_black"/>
 
+    <TextView
+        android:id="@+id/minhaEscolha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sua Escolha:"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pedrabtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="56dp"/>
+
+    <TextView
+        android:id="@+id/escolhaCpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPU: "
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/minhaEscolha"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Você x CPU"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/escolhaCpu"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/placar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 x 0"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/novaPartidabtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nova Partida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/placar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/gray_for_black"
+        app:cornerRadius="0dp"
+        android:textColor="@color/white"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
