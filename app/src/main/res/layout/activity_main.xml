@@ -4,15 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/jokenpotxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Jokenpô"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="64dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <ImageButton
+        android:id="@+id/tesourabtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jokenpotxt"
+        app:layout_constraintEnd_toStartOf="@+id/pedrabtn"
+        android:layout_marginTop="32dp"
+        android:padding="10dp"
+        android:src="@drawable/scissors_icon"
+        android:background="@color/green_for_black"/>
+
+    <ImageButton
+        android:id="@+id/pedrabtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/jokenpotxt"
+        app:layout_constraintEnd_toStartOf="@+id/papelbtn"
+        app:layout_constraintStart_toEndOf="@+id/tesourabtn"
+        android:layout_marginTop="32dp"
+        android:padding="10dp"
+        android:src="@drawable/rock_icon"
+        android:background="@color/yellow_for_black"/>
+
+    <ImageButton
+        android:id="@+id/papelbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/jokenpotxt"
+        app:layout_constraintStart_toEndOf="@+id/pedrabtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:padding="10dp"
+        android:src="@drawable/paper_icon"
+        android:background="@color/orange_for_black"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
